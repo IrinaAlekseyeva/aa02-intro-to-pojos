@@ -6,11 +6,17 @@ arguments passed in.
 */
 
 // Your code here 
-
-// console.log(catBuilder("Whiskers", "black", ["scratching-post", "yarn"]));
+function catBuilder(nameStr, colorStr, arrToys){
+  const cat = {};
+  cat.name = nameStr;
+  cat.color = colorStr;
+  cat.toys = arrToys;
+return cat;
+}
+console.log(catBuilder("Whiskers", "black", ["scratching-post", "yarn"]));
 // //=> { name: 'Whiskers', color: 'black', toys: ['scratching-post', 'yarn'] }
 
-// console.log(catBuilder("Nyan", "rainbow", ["poptarts"]));
+console.log(catBuilder("Nyan", "rainbow", ["poptarts"]));
 // //=> { name: 'Nyan', color: 'rainbow', toys: [ 'poptarts' ] }
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
